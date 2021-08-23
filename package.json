@@ -1,0 +1,27 @@
+{
+  "name": "CAPS_Socket.io",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Qasem-moh/CAPS_Socket.io.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Qasem-moh/CAPS_Socket.io/issues"
+  },
+  "homepage": "https://github.com/Qasem-moh/CAPS_Socket.io#readme",
+  "devDependencies": {
+    "dotenv": "^10.0.0",
+    "jest": "^27.0.6",
+    "socket.io": "^4.1.3",
+    "socket.io-client": "^4.1.3",
+    "supertest": "^6.1.6"
+  }
+}

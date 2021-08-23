@@ -1,20 +1,15 @@
 'use strict';
 
 const io = require('socket.io-client');
-
-let host = 'http://localhost:8080';
-
-
-const capsConnection = io.connect(host);
-const pickup = io.connect(`${host}/pickup`);
-
 const faker = require('faker');
+
+const capsConnection = io.connect('http://localhost:4000');
 
 setInterval(() => {
     setTimeout(() => {
 
         let customerOrder = {
-            storeName: process.env.STORENAME || 'qasem',
+            storeName: process.env.STORENAME || 'samah',
             orderId: faker.datatype.uuid(),
             customerName: faker.name.findName(),
             address: faker.address.streetAddress()
@@ -26,4 +21,4 @@ setInterval(() => {
 
 
     }, 3000)
-}, 1500)
+}, 3000)
